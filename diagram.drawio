@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" modified="2023-06-01T01:21:08.949Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="ET8K24gS9XdxDLBRTZES" version="21.3.6" type="device">
+  <diagram name="페이지-1" id="IyZUJQVC3wn3y2f9uK3q">
+    <mxGraphModel dx="3425" dy="1958" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="604BRe7_-bqtOznIk9Sv-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Person&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ enterance(): boolean&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="-184" y="-92" width="190" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;&lt;i&gt;Moderator&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- personality: String&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ enterance(): boolean {abstract}&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;guideFirstTurn(): void {abstract}&lt;br&gt;+&amp;nbsp;guidePick(String): void {abstract}&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;guideGuess(String): void {abstract}&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;guideCorrect(String): void {abstract}&lt;br&gt;+&amp;nbsp;guideKeepGoing(): void {abstract}&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;guideWrong(String): void {abstract}&lt;br&gt;+&amp;nbsp;guideEnd(String): void {abstract}&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;judge(ArrayList&amp;lt;Integer&amp;gt;, int, int): boolean&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="6" y="126" width="258" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-3" value="Player" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="-501" y="126" width="317" height="186" as="geometry" />
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-4" value="- name: String&lt;br&gt;- randomNumber: int&lt;br&gt;- myBlocks: ArrayList&amp;lt;Integer&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=16;labelBackgroundColor=none;fontColor=#143642;" vertex="1" parent="604BRe7_-bqtOznIk9Sv-3">
+          <mxGeometry y="26" width="317" height="71" as="geometry" />
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-5" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#0F8B8D;fontSize=16;labelBackgroundColor=none;fontColor=#143642;" vertex="1" parent="604BRe7_-bqtOznIk9Sv-3">
+          <mxGeometry y="97" width="317" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-6" value="+ enterance(): boolean&lt;br&gt;+&amp;nbsp;pickFirst(ArrayList&amp;lt;Integer&amp;gt;): void&lt;br&gt;+&amp;nbsp;pickOne(ArrayList&amp;lt;Integer&amp;gt;): void&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=16;labelBackgroundColor=none;fontColor=#143642;" vertex="1" parent="604BRe7_-bqtOznIk9Sv-3">
+          <mxGeometry y="105" width="317" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-8" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ActiveModerator&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ enterance(): boolean&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+&amp;nbsp;guideFirstTurn(): void&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;guidePick(String): void&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;guideGuess(String): void&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;guideCorrect(String): void&amp;nbsp;&lt;br&gt;+&amp;nbsp;guideKeepGoing(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;guideWrong(String): void&amp;nbsp;&lt;br&gt;+&amp;nbsp;guideEnd(String): void&amp;nbsp;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="484" y="8" width="258" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-9" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CalmModerator&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ enterance(): boolean&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+&amp;nbsp;guideFirstTurn(): void&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;guidePick(String): void&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;guideGuess(String): void&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;guideCorrect(String): void&amp;nbsp;&lt;br&gt;+&amp;nbsp;guideKeepGoing(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;guideWrong(String): void&amp;nbsp;&lt;br&gt;+&amp;nbsp;guideEnd(String): void&amp;nbsp;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="484" y="315" width="258" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Block&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- min: final int&lt;br&gt;- max: final int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- blackhole: ArrayList&amp;lt;Integer&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;generateFirst(): ArrayList&amp;lt;Integer&amp;gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="484" y="614" width="258" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-12" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Game&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- player1: Player&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- player2: Player&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- moderator: Moderator&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- block: Block&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;startGame(): void&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ playGame(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ endGame(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;enterPlayer(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;selectModerator():&amp;nbsp; void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;firstTurn(ArrayList&amp;lt;Integer&amp;gt;): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;pickOne(ArrayList&amp;lt;Integer&amp;gt;): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;guess(Player, Player): boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;correct(String): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;openOpponentBlock(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;stopOrGoing(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;wrong(Player): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;openMineBlock(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;checkNotOpen(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;askContinue(): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
+          <mxGeometry x="-218" y="504" width="258" height="324" as="geometry" />
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-26" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;exitX=0.525;exitY=0.609;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="604BRe7_-bqtOznIk9Sv-30" target="604BRe7_-bqtOznIk9Sv-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-313" y="18" as="sourcePoint" />
+            <mxPoint x="-94" y="4" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-29" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="604BRe7_-bqtOznIk9Sv-3" target="604BRe7_-bqtOznIk9Sv-28">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-342" y="126" as="sourcePoint" />
+            <mxPoint x="-136" y="-3" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-28" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=0;top=0;fillColor=none;strokeColor=#A8201A;fontSize=16;fontColor=#143642;dashed=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-342" y="67" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-30" value="" style="line;strokeWidth=2;html=1;strokeColor=#A8201A;fontSize=16;fontColor=#143642;fillColor=#FAE5C7;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="-342" y="51" width="479" height="29.5" as="geometry" />
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-32" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=0;top=0;fillColor=none;strokeColor=#A8201A;fontSize=16;fontColor=#143642;dashed=1;strokeWidth=2;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="302.5" y="223.5" width="297" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-34" value="" style="line;strokeWidth=2;html=1;strokeColor=#A8201A;fontSize=16;fontColor=#143642;fillColor=#FAE5C7;dashed=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="275.5" y="235.5" width="292" height="29.5" as="geometry" />
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-35" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;exitX=0.58;exitY=0.565;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="604BRe7_-bqtOznIk9Sv-34" target="604BRe7_-bqtOznIk9Sv-2">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-81" y="79" as="sourcePoint" />
+            <mxPoint x="-79" y="7" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-37" value="" style="line;strokeWidth=2;html=1;strokeColor=#A8201A;fontSize=16;fontColor=#143642;fillColor=#FAE5C7;dashed=1;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="-338" y="382" width="457" height="29.5" as="geometry" />
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-38" value="" style="line;strokeWidth=2;html=1;strokeColor=#A8201A;fontSize=16;fontColor=#143642;fillColor=#FAE5C7;dashed=1;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="-141.75" y="434" width="105.5" height="29.5" as="geometry" />
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-39" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#A8201A;fontSize=12;fontColor=#143642;fillColor=#FAE5C7;curved=1;dashed=1;strokeWidth=2;entryX=0.507;entryY=1.019;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="604BRe7_-bqtOznIk9Sv-37" target="604BRe7_-bqtOznIk9Sv-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-222" y="475" as="sourcePoint" />
+            <mxPoint x="-172" y="425" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-40" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#A8201A;fontSize=12;fontColor=#143642;fillColor=#FAE5C7;curved=1;dashed=1;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="121" y="395" as="sourcePoint" />
+            <mxPoint x="121" y="334" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="604BRe7_-bqtOznIk9Sv-41" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#A8201A;fontSize=12;fontColor=#143642;fillColor=#FAE5C7;curved=1;dashed=1;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="604BRe7_-bqtOznIk9Sv-12" target="604BRe7_-bqtOznIk9Sv-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="131" y="405" as="sourcePoint" />
+            <mxPoint x="131" y="344" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
