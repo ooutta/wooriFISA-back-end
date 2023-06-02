@@ -1,0 +1,5 @@
+2023-06-02 10:34:02 INFO  INFO 레벨 출력
+2023-06-02 10:34:02 ERROR error
+2023-06-02 10:34:02 ERROR Error
+java.lang.ArithmeticException: / by zero
+	at dev.syntax.step02logging.step02exlib.MyLog4jTest.main(MyLog4jTest.java:18) [bin/:?]

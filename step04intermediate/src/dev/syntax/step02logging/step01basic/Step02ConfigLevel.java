@@ -1,4 +1,4 @@
-package dev.syntax.step02logging;
+package dev.syntax.step02logging.step01basic;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
