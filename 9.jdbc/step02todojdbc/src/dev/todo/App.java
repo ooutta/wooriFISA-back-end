@@ -8,11 +8,13 @@ public class App {
 	public static void main(String[] args) {
 		TodoController todoController = new TodoController();
 //		todoController.findAll();
-
-//		System.out.println(todoController.findById(1));
 		
-		new Todo.Builder(5).title("¹ä ¸Ô±â")
-		.description("¹äÀ» ¸Ô´Â´Ù").build();
+//		todoController.findById(5);
+//		todoController.insert();
+		todoController.update();
+		
+//		new Todo.Builder(5).title("¹ä ¸Ô±â")
+//		.description("¹äÀ» ¸Ô´Â´Ù").build();
 	}
 
 }

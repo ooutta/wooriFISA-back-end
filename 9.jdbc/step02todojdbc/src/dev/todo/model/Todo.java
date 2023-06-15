@@ -28,6 +28,26 @@ public class Todo {
 		System.out.println(this);
 	}
 
+	public int getId() {
+		return id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public LocalDate getDueDate() {
+		return dueDate;
+	}
+
+	public boolean isCompleted() {
+		return isCompleted;
+	}
+
 	@Override
 	public String toString() {
 		return "Todo [id=" + id + ", title=" + title + ", description=" + description + ", dueDate=" + dueDate
