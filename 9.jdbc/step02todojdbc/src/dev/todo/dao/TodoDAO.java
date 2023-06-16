@@ -1,6 +1,7 @@
 package dev.todo.dao;
 
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.sql.Connection;
@@ -14,6 +15,7 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 
 import dev.todo.model.Todo;
 import dev.todo.util.DBUtil;
@@ -28,9 +30,15 @@ public class TodoDAO {
 		
 		List<Todo> todos = new ArrayList<>();
 		
-		final String selectQuery = "SELECT * FROM todo";
+//		final String selectQuery = "SELECT * FROM todo";
 		
 		try {
+			// MyBatis
+			Properties prop = new Properties();
+			prop.loadFromXML(new FileInputStream("resources/sql_mapper.xml"));
+			final String selectQuery = prop.getProperty("getTodos");
+			
+			
 			// DB客狼 楷搬 按眉 积己
 			connection = DBUtil.getConnection();
 			
