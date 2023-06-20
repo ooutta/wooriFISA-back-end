@@ -38,6 +38,8 @@ public class Book {
 	@Column(name = "book_name", nullable = false)
 	private String name;
 	
+	@Column
+	private String author; // 도서 저자
 	
 	/*
 	 * TemporalType.DATE: 날짜, DB의 date 타입과 맵핑 (ex. 2022-03-03) 
@@ -57,8 +59,27 @@ public class Book {
 		this.name = name;
 	}
 
+	public Book(String name, String author, Date pubDate) {
+		super();
+		this.name = name;
+		this.author = author;
+		this.pubDate = pubDate;
+	}
+
+	public void updateBookName(String name) {
+		this.name = name;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
 	@Override
 	public String toString() {
-		return "Book [id=" + id + ", name=" + name + ", pubDate=" + pubDate + "]";
+		return "Book [id=" + id + ", name=" + name + ", author=" + author + ", pubDate=" + pubDate + "]";
 	}
 }
