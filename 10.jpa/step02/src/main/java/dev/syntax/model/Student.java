@@ -11,17 +11,16 @@ import javax.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.Setter;
 
-
 @Getter
 @Setter
 @Entity
 public class Student {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "student_id")
 	private int id;
-	
+
 	@Column(name = "student_name", nullable = false)
 	private String studentName;
 
@@ -29,17 +28,18 @@ public class Student {
 	@JoinColumn(name = "major_id") // 이거 안 적어도 Major 클래스와 매핑된다.
 	// -> 외래키 매핑 시 사용, name 속성에 맵핑할 외래키 이름 지정
 	private Major major;
-	
+
 	public void setMajor(Major major) {
 		this.major = major;
 	}
-	
+
 	public Major getMajor() {
 		return major;
 	}
-	
-	public Student() {}
-	
+
+	public Student() {
+	}
+
 	public Student(String studentName) {
 		super();
 		this.studentName = studentName;
