@@ -33,17 +33,14 @@ public class MouseListServlet extends HttpServlet {
 		List<Mouse> mice = mouseDAO.findAll();
 
 		// mice 데이터를 HTML 페이지에 바인딩하여 렌더링
-		// 인코딩 처리
-		request.setCharacterEncoding("UTF-8");
-
-		// mice 데이터를 HTML 페이지에 바인딩하여 렌더링
+		
 		StringBuilder responseHTML = new StringBuilder();
 
 		responseHTML.append("<html>");
-		responseHTML.append("	<head>");
-		responseHTML.append("		<title>Mouse 목록 페이지</title>");
-		responseHTML.append("	</head>");
-		responseHTML.append("	<body>");
+		responseHTML.append("<head>");
+		responseHTML.append("<title>Mouse 목록 페이지</title>");
+		responseHTML.append("</head>");
+		responseHTML.append("<body>");
 		responseHTML.append("<h1>Mouse 목록 페이지</h1>");
 		responseHTML.append("<ul>");
 
@@ -58,8 +55,8 @@ public class MouseListServlet extends HttpServlet {
 		}
 		responseHTML.append("</ul>");
 
-		responseHTML.append("	</body>");
-		responseHTML.append("		</html>");
+		responseHTML.append("</body>");
+		responseHTML.append("</html>");
 
 		response.setStatus(200);
 		response.setCharacterEncoding("UTF-8");
