@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 스프링 컨테이너가 bean들을 보관하는 설정 파일 -->
+
+<!-- https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/xsd-configuration.html -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 프로그램에서 사용할 비지니스 객체(Bean)을 정의 -->
+	<!-- id: 빈의 고유한 이름, 식별자 class: 빈의 타입(패키지명을 -->
+	<bean id="tapeReader" class="dev.spring.step01setter.TapeReader">
+		<!-- setter 기반 의존성 주입 방법 -->
+		<!-- TapeReader 클래스는 자신의 필드로 Tape를 가지고 있음 -->
+		<!-- 내부적으로 setTape()을 호출 -->
+		<property name="tape" ref="tapeId" />
+	</bean>
+	<bean id="tapeId" class="dev.spring.step01setter.Tape">
+	<!-- 
+		<constructor-arg value="아일랜드" index="0" type="String"/>
+		<constructor-arg value="true" index="1" type="boolean"/>
+	-->
+	
+	 	<!-- setName()을 호출해야하기 때문에 set을 제외하고 Name만으로 작성 -->
+	 	<property name="name" value="아일랜드"/>
+	 	
+	 	<!-- name 부분에 isXxx(), setXxx()에서 is와 set을 생략하고 작성 -->
+	 	<property name="worked" value="true"/>
+	 
+	 
+	</bean>
+</beans>
