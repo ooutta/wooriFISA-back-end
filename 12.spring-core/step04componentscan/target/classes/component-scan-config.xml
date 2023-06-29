@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xmlns:context attribute 추가 해당 xml 엘리먼트 참고 링크 https://docs.spring.io/spring-framework/reference/core/beans/annotation-config.html -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		https://www.springframework.org/schema/context/spring-context.xsd">
+ 	
+	<!-- @Autowired를 사용하기 위해서 <context:annotation-config />는 기본적으로 사용했었지만, -->
+	<!-- <context:component-scan />을 사용할 경우 annotation-config를 사용하지 않아도 @Autowired 사용 가능 -->
+	<!-- 정리하면, <component-scan />은 <annotation-config />를 포함한 엘리먼트 -->
+	
+	<!-- "dev.spring" 경로 하위에 있는 파일들을 한번씩 훑으면서 @Component가 설정된 클래스 찾아서 객체 생성 -->
+	<context:component-scan base-package="dev.spring" />
+</beans>
