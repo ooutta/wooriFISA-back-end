@@ -15,4 +15,6 @@ public interface OwnerRepository extends CrudRepository<Owner, Long>{
 	// SQL에서 LIKE 연산자를 활용한 lastName 검색 기능
 	// 쿼리 메서드 = 메서드의 이름만 규칙에 맞게 작성하면 그에 해당하는 SQL 쿼리가 작성됨
 	List<Owner> findAllByLastNameLike(String lastName);
+	
+	List<Owner> findAll();
 }

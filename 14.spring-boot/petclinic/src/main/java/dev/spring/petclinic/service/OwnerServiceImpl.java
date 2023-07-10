@@ -46,7 +46,9 @@ public class OwnerServiceImpl implements OwnerService {
 		return ownerRepository.findById(ownerId).orElse(null);
 	} 
 
-	
-	
+	@Override
+	public List<Owner> findAll() {
+		return ownerRepository.findAll();
+	}
 
 }
